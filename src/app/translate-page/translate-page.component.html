@@ -1,0 +1,17 @@
+<h1>Translate Page</h1>
+
+<div class="container">
+  <button (click)="toggleLanguage()" class="button">
+    {{ currentLanguage }}
+  </button>
+  <p>{{ "dictionary.hello" | translate }}</p>
+  <p>{{ "dictionary.goodbye" | translate }}</p>
+  <p>{{ "dictionary.thank_you" | translate }}</p>
+  <p>{{ "dictionary.please" | translate }}</p>
+  <p>{{ "dictionary.yes" | translate }}</p>
+  <p>{{ "dictionary.no" | translate }}</p>
+  <p>{{ "dictionary.friend" | translate }}</p>
+  <p>{{ "dictionary.family" | translate }}</p>
+  <p>{{ "dictionary.love" | translate }}</p>
+  <p>{{ "dictionary.beautiful" | translate }}</p>
+</div>

@@ -1,0 +1,14 @@
+{
+  "dictionary": {
+    "hello": "Hello",
+    "goodbye": "Goodbye",
+    "thank_you": "Thank you",
+    "please": "Please",
+    "yes": "Yes",
+    "no": "No",
+    "friend": "Friend",
+    "family": "Family",
+    "love": "Love",
+    "beautiful": "Beautiful"
+  }
+}
