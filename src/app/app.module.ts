@@ -7,13 +7,14 @@ import { AppComponent } from "./app.component"
 import { TranslatePageComponent } from "./translate-page/translate-page.component"
 import { TranslateLoader, TranslateModule } from "@ngx-translate/core"
 import { TranslateService } from "@ngx-translate/core";
-import { HomePageComponent } from './home-page/home-page.component'
+import { HomePageComponent } from './home-page/home-page.component';
+import { PrimeflexFirstPageComponent } from './primeflex-first-page/primeflex-first-page.component'
 
 export function HttpLoaderFactory(http: HttpClient) {
   return new TranslateHttpLoader(http, "./assets/i18n/")
 }
 @NgModule({
-  declarations: [AppComponent, TranslatePageComponent, HomePageComponent],
+  declarations: [AppComponent, TranslatePageComponent, HomePageComponent, PrimeflexFirstPageComponent],
   imports: [
     BrowserModule,
     AppRoutingModule,
