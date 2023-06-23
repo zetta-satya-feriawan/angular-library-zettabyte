@@ -5,6 +5,7 @@ import { HomePageComponent } from "./home-page/home-page.component"
 import { PrimeflexFirstPageComponent } from "./primeflex-first-page/primeflex-first-page.component"
 import { PrimeflexSecondPageComponent } from "./primeflex-second-page/primeflex-second-page.component"
 import { CkeditorFirstPageComponent } from "./ckeditor-first-page/ckeditor-first-page.component"
+import { CkeditorSecondPageComponent } from "./ckeditor-second-page/ckeditor-second-page.component"
 
 const routes: Routes = [
   { path: "", component: HomePageComponent },
@@ -12,6 +13,7 @@ const routes: Routes = [
   { path: "primeflex-1", component: PrimeflexFirstPageComponent },
   { path: "primeflex-2", component: PrimeflexSecondPageComponent },
   { path: "ckeditor-1", component: CkeditorFirstPageComponent },
+  { path: "ckeditor-2", component: CkeditorSecondPageComponent },
 ]
 
 @NgModule({
