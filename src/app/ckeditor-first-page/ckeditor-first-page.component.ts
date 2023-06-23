@@ -10,7 +10,9 @@ import * as DecoupledEditor from "@ckeditor/ckeditor5-build-decoupled-document"
 export class CkeditorFirstPageComponent {
   public Editor = DecoupledEditor
 
-  editorControl = new FormControl()
+  // editorControl = new FormControl()
+
+  editorControl = new FormControl("Test Form Control")
 
   displayValue() {
     console.log(this.editorControl.value)
