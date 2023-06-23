@@ -1,4 +1,19 @@
+<h1>CKEditor Day 1</h1>
+<div class="container">
+  <ckeditor
+    #editor
+    [editor]="Editor"
+    (ready)="onReady($event)"
+    [formControl]="editorControl"
+  ></ckeditor>
+  <button (click)="displayValue()">Display Value</button>
+</div>
+
 <!-- <h1>CKEditor Day 1</h1>
 <div class="container">
-  <ckeditor #editor [editor]="Editor" (ready)="onReady($event)"></ckeditor>
+  <ckeditor
+    [(ngModel)]="editorControl.value"
+    (ready)="onReady($event)"
+  ></ckeditor>
+  <button (click)="displayValue()">Display Value</button>
 </div> -->

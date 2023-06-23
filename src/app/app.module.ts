@@ -11,8 +11,9 @@ import { TranslateService } from "@ngx-translate/core"
 import { HomePageComponent } from "./home-page/home-page.component"
 import { PrimeflexFirstPageComponent } from "./primeflex-first-page/primeflex-first-page.component"
 import { PrimeflexSecondPageComponent } from "./primeflex-second-page/primeflex-second-page.component"
-import { CkeditorFirstPageComponent } from "./ckeditor-first-page/ckeditor-first-page.component";
-import { CkeditorSecondPageComponent } from './ckeditor-second-page/ckeditor-second-page.component'
+import { CkeditorFirstPageComponent } from "./ckeditor-first-page/ckeditor-first-page.component"
+import { CkeditorSecondPageComponent } from "./ckeditor-second-page/ckeditor-second-page.component"
+import { ReactiveFormsModule, FormsModule } from "@angular/forms"
 
 export function HttpLoaderFactory(http: HttpClient) {
   return new TranslateHttpLoader(http, "./assets/i18n/")
@@ -31,6 +32,8 @@ export function HttpLoaderFactory(http: HttpClient) {
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
+    ReactiveFormsModule,
+    FormsModule,
     CKEditorModule,
     TranslateModule.forRoot({
       loader: {

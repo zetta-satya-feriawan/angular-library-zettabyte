@@ -1,5 +1,6 @@
 import { Component } from "@angular/core"
-// import * as DecoupledEditor from "@ckeditor/ckeditor5-build-decoupled-document"
+import { FormControl } from "@angular/forms"
+import * as DecoupledEditor from "@ckeditor/ckeditor5-build-decoupled-document"
 
 @Component({
   selector: "app-ckeditor-first-page",
@@ -7,7 +8,13 @@ import { Component } from "@angular/core"
   styleUrls: ["./ckeditor-first-page.component.css"],
 })
 export class CkeditorFirstPageComponent {
-  // public Editor = DecoupledEditor
+  public Editor = DecoupledEditor
+
+  editorControl = new FormControl()
+
+  displayValue() {
+    console.log(this.editorControl.value)
+  }
 
   onReady(editor: any) {
     editor.ui
